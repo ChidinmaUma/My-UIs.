@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumenT</title>
+    <style>
+    
+        .options{
+            columns: 2;
+            margin-top: 10px;
+        }
+    
+         .shoping{
+            border: 2px solid black;
+            width: 150px;
+            height: 100px;
+            overflow: auto;
+        } 
+        ul{
+            list-style: none;
+            list-style-image: url(./images/stargif.gif);
+            font-size: 30px;
+        } 
+    </style>
+</head>
+<body>
+    <!-- There about 5 different examples in this page , so you have to comment-out styles to see each reflect properly -->
+<!-- How to create a nested list. note, by default ol is in numbered style-->
+    <ol>
+        <li>food
+            <ol type="i">
+                <li>rice</li>
+                <li>beans</li>
+                <li>milk</li>
+            </ol>
+        </li>
+    </ol>
+    <!-- "option" is how to divide a nested list into columns-->
+    <ol type="1">
+        <li> What is HTML ?
+            <ol type="a" class="options">
+                <li>For structure </li>
+                <li>For colors</li>
+                <li>For responsiveness</li>
+                <li>For design</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!-- "shoping" is e.g to make list scrollable -->
+
+ <ol type="a" class="shoping">
+        <li>BAG</li>
+        <li>CAR</li>
+        <li>FOOD</li>
+        <li>FAN</li>
+        <li>RICE</li>
+        <li>BOOK</li>
+        <li>GAS</li>
+        <li>APPLE</li>
+        <li>BREAD</li>
+        <li>BOOK</li>
+        <li>GAS</li>
+        <li>APPLE</li>
+        <li>BOOK</li>
+        <li>GAS</li>
+        <li>APPLE</li>
+    </ol>
+    <!--e.g  for unordered list & inserting custom icon gif symbol-->
+    <ul>
+        <li>box</li>
+        <li>bag</li>
+        <li>sugar</li>
+        <li>honey</li>
+        <li>salt</li>
+        <li>water</li>
+    </ul>
+
+    <!-- nested bulleted list with assorted items note, comment-out ul{} style for this to reflect properly-->
+    <ol type="1">
+     <ol type="1">
+        <li>CSS is for styling
+            <ul type="square">
+                <li>It has colors
+                    <ol type="a">
+                        <li>background colors</li>
+                        <li>colors for text</li>
+                    </ol>
+                </li>
+                <li>It has fontsizes</li>
+                <li>It has Display grid</li>
+            </ul>
+        </li>
+        <li>HTML</li>
+     </ol>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            font-size: 10px;
+            font-family: Arial;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .bi-search{
+            background-color: #0077B6;
+            color:white;
+            padding: 5px;
+            width: 25px;
+            height: 25px;
+            border-radius: 25px;
+            display: inline-block;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .brand-title{
+            font-family: Arial;
+            font-size: 25px;
+            color:  #334155;
+        }
+        nav{
+            display:inline;
+            margin-left: 50px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav span{
+            margin-right: 20px;
+            color:  #334155;
+        }
+        .buy-finder{
+            background-color: #0077B6;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 20px;
+            display: inline-block;
+            width: 120px;
+            text-align: center;
+        }
+
+         body{
+             background: #E9F0FF;
+            box-shadow: 5px 5px 10px #000000, -5px -5px 10px #1a1a1a;
+            padding: 20px;
+            color: #0A1A2F;
+        }
+
+        .sec0{
+            padding-top: 30px;
+            font-family: Arial;
+            
+        }
+        .cont-header{
+            
+            margin-top: -8px;
+            height: 450px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            color: #334155;
+            
+        }
+        .img-div{
+            margin-top: 20px;
+            
+    
+        }
+        .cont-img{
+         width: 300px;
+         height: 300px;
+         border-radius: 300px;
+
+        }
+    
+        .cont-header p{
+            font-size: 16px;
+            margin: 300px;
+            margin-top: 10px;
+            font-weight: lighter;
+            line-height: 25px;
+            color:  #0A1A2F
+
+        }
+    
+         button{
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            width: 160px;
+            height: 40px;
+            box-shadow: 2px 2px 1px white;
+            border-top: 1px solid white;
+            color:rgb(0, 0, 0 );
+            font-weight: bold;
+         }
+        
+        .cont-footer{
+        
+            margin-top: -290px;
+            
+            
+        }
+        .cont-footer button{
+            background-color: #0077B6 ;
+        
+        }
+        
+
+
+
+        /* for naresh-style sec1 */
+        .sec1{
+            margin-top: 150px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            grid-gap: 10px;
+            height: 450px;
+            font-family: arial;
+            font-size: 20px;
+            
+
+        }
+        .card{
+            width: 100%;
+            height: 400px;
+            box-shadow: 2px 2px 2px grey;
+            border-radius: 15px;
+            
+        }
+        .card-img{
+            width: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+        }
+        .card-body{
+            background-color: rgba(255, 255, 255, 1);
+            height: 175px;
+            margin-top: -15px;
+
+        
+    
+        }
+        .div1{
+            
+            margin: 10px;
+            padding-top: 10px;
+            padding: 30px 30px;
+        }
+        .div1-title{
+            background-color: grey;
+            padding: 5px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            
+        }
+        .div1-span{
+            background-color:  #0077B6;
+            padding: 5px;
+            color:#FFFFFF;
+        }
+        .rate{
+            color:#F8FAFC;
+        }
+        .card-footer{
+            display: flex;
+            background-color: #0077B6;
+            height:45px;
+            width: 100%;
+            text-align: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        
+        }
+        .right{
+            width: 50%;
+            background-color: rgba(255, 255, 255, 1) ;
+            padding-top: 10px;
+            border-bottom-right-radius: 10px;
+            border-top: 1px solid grey;
+            box-shadow: 1px 1px 2px grey;
+        }
+        .left{
+            width:50%;
+            padding-top: 10px;
+            border-bottom-left-radius: 10px;
+            box-shadow: 1px 1px 2px grey;
+            color:  #0A1A2F;
+
+        }
+        .bi-star{
+            color: grey;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="bi bi-search"></span>
+            <span class="brand-title">NEXADON</span>
+             <nav>
+                <span>About Us<span class="bi bi-chevron-down"></span></span>
+                <span>Corporate Training <span class="bi bi-chevron-down"></span>
+                <span>Services <span class="bi bi-chevron-down"></span>
+            </nav>
+        </div>
+        
+        <div>
+            <span>
+                <span class="buy-finder"><span class="bi bi-cart"></span> Add-to-Cart</span>
+            </span>
+        </div>
+    </header>
+     <section class="sec0">
+         <div class="cont-header">
+             <div class="text">Empowering the Next Generation of Digital Professionals.</div>
+             <div class="img-div">
+                <img src="images/1762170659764.jpg"class="cont-img">
+                 <div class="text">Where Ideas Become Innovation</div>
+             </div>
+             <div>
+                 <div>
+                 <p><b>NEXADON ACADEMY:</b> &nbsp;Providing high-impact training in emerging tech fields, fostering creativity, critical thinking, and continous learning.</p>
+                 </div>
+                 <br>
+        
+             </div>
+               <div class="cont-footer">
+                  <button>Explore Courses</button>
+              </div>
+         </div>
+    </section>
+    <section class="sec1">
+         <div class="card">
+            <div class="card-header">
+                <img src="images/naresh-img3.jpg" class="card-img">
+            </div>
+            <div class="card-body">
+                <div class="div1">
+                    <div class="div1-title">Full Stack .NET Core</div>
+                    <div class="div1-span">
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-half"></span>
+                        <span class="rate">4.5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="left">ENROLL</div>
+                <div class="right">
+                    <span class="bi bi-share"></span>
+                    <span> &nbsp;SHARE</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="images/naresh-img4.jpg" class="card-img">
+            </div>
+            <div class="card-body">
+                 <div class="div1">
+                    <div class="div1-title">Full Stack Python</div>
+                    <div class="div1-span">
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="rate">5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="left">ENROLL</div>
+                <div class="right">
+                    <span class="bi bi-share"></span>
+                    <span> &nbsp;SHARE</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="images/naresh-img5.jpg" class="card-img">
+
+            </div>
+            <div class="card-body">
+                <div class="div1">
+                    <div class="div1-title">Node JS</div>
+                    <div class="div1-span">
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-half"></span>
+                        <span class="rate">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                 <div class="left">ENROLL</div>
+                <div class="right">
+                    <span class="bi bi-share"></span>
+                    <span> &nbsp;SHARE</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="images/naresh-img6.jpg" class="card-img">
+
+            </div>
+            <div class="card-body">
+                <div class="div1">
+                    <div class="div1-title">Cyber Security & Ethical Hacking</div>
+                    <div class="div1-span">
+                        <span class="bi bi-star"></span>
+                        <span class="bi bi-star"></span>
+                        <span class="bi bi-star"></span>
+                        <span class="bi bi-star"></span>
+                        <span class="bi bi-star"></span>
+                        <span class="rate">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                 <div class="left">ENROLL</div>
+                <div class="right">
+                    <span class="bi bi-share"></span>
+                    <span> &nbsp;SHARE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    </section>
+    <footer>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-India</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        /* for hd1 */
+        .hd1{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            padding: 15px;
+            font-size: 15px;
+            font-family: Arial;
+            background-color: whitesmoke;
+            margin-bottom: -3px;
+            margin-left: -1px;
+            margin-right: 0px;
+        }
+
+        nav span{
+            margin-right: 15px;
+            color:grey;
+        }
+        .brand-name{
+            font-weight: bold;
+            font-size: 20px;
+            font-family: cooper black;
+        }
+
+        .btn-login{
+            background-color: lightgrey;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+        }
+        .btn-create{
+            background-color:#6600ff;
+            color: whitesmoke;
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+        /* end of hd1 css */
+
+        section{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            grid-gap: 20px;
+            padding: 15px;
+            background-color: whitesmoke;
+            margin-top:-5px;
+            height: 450px;
+        }
+        .card{
+            background-color: white;
+            box-shadow: 2px 2px 2px gray;
+            height: 420px;
+            padding: 10px;
+            margin-top: -210px;
+            margin-bottom: 200px;
+            padding-bottom: 20px;  
+        }
+        .card-header{
+            margin-top: 5px;
+            padding: 10px;
+            padding-bottom: 20px;
+            height: 50px;
+        }
+        .card-title{
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 23px;
+        }
+        .rows{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            height: 140px;
+            margin-bottom: 5px;
+        }
+        .rows div{
+            margin: 5px;
+        }
+        .card-img{
+            width: 100%;
+        }
+        .card-body{
+            font-family: Arial;
+            font-size: 11px;
+            height: 300px;
+            padding-bottom: 5px;
+        }
+        .card-footer{
+            color: grey;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-weight: bold; 
+        }
+    .sec2{
+        height: 240px;
+    }
+    .text h1{
+        background-color: whitesmoke;
+        text-align: center;
+        font-weight: lighter;
+        padding: 50px;
+        margin-bottom: 0px;
+        margin-top: 0px;  
+    }
+    .sec3{
+        height: 350px;
+        font-family: Arial;
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        padding-left: 200px;
+        padding-right: 200px;
+        justify-content: center;
+    }
+    .card-sec3{
+        height: 300px;
+        width: 250px;
+        border: 1px solid grey;
+        border-radius: 3px;
+        padding: 20px;
+    }
+    .header-sec3{
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+        height: 60px;
+        grid-gap: 10px;
+        padding-top: 10px;
+    }
+    .card-tit{
+        font-size: 15px;
+    }
+    .card-subtit{
+        font-weight: bold;
+    }
+    .bi-star-fill{
+        color: goldenrod;
+    }
+    .bi-star{
+        color: grey;
+    }
+    .img-sec3{
+        width: 100%;
+    }.body-sec3{
+        height: 190px;
+        padding: 5px;
+        text-align: justify;
+        line-height: 22px;
+        margin-top: 5px;
+    }
+    .footer-sec3{
+        text-align: center;
+        color: grey;
+        margin-top: 5px;
+        padding: 5px 5px;
+    }
+
+    /*main footer start css */
+
+     .back{
+            height: 50px;
+            background-color:#001F3F;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: Arial;
+            align-content: center;
+        }
+
+        footer{
+            height: 600px;
+            color: white;
+            font-family: Arial;
+            font-size: 14px;
+        }
+        .sev-cont{
+            background-color: #001933;
+            display: grid;
+            grid-template-columns:3fr 3fr 3fr 3fr;
+            padding: 10px;
+            padding-left: 90px;
+            padding-right: 90px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            
+        }
+
+        .sev-title{
+            font-size: 15px;
+            font-weight: bold;
+            padding: 40px;
+            padding-left: 0px;
+            
+        }
+        .sev-title~span{
+              display: block;
+              padding-top: 15px;
+              
+        
+        }
+         aside span{
+             display: block;
+             padding: 8px;
+             padding-left: 0px;
+       }
+       .btn-cont{
+        
+        background-color:#001933;
+        height: 150px;
+        text-align: center;
+        padding-top: 60px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        border-top: 1px solid darkgray;
+        
+       }
+
+       .bi-globe{
+        display: inline-block; 
+        height: 30px;
+        width: 130px;
+        background-color:#001933;
+        padding-top: 10px;
+        border-radius: 4px;
+        border: 1px solid white;
+        opacity: 0.6;
+        margin: 15px;
+        
+        
+    
+    
+       }
+       .btn2{
+        display: inline-block;
+        height: 30px;
+        width: 100px;
+        padding-top: 10px;
+        background-color: #001933; 
+        border-radius: 4px;
+        border: 1px solid white;
+        opacity: 0.6;
+        
+        
+       }
+       .botom-footer{
+            padding: 20px;
+            font-size: 10px;
+            font-weight: lighter;
+           
+       }
+       .botom-footer all-span{
+            margin-top:  20px;
+          padding-top: 20px;
+        
+       }
+       .logo{
+        margin: 40px;
+       }
+       address{
+        margin: 5px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+         <div class="hd1">
+        <div>
+            <img src="./images/Favicon.ico"></img>
+            <span class="brand-name">Block</span>
+        </div>
+        <div>
+            <nav>
+                <span>Landings<span class="bi bi-chevron-down"></span></span>
+                <span>Pages<span class="bi bi-chevron-down"></span></span>
+                <span>Block<span class="bi bi-chevron-down"></span></span>
+                <span>Accounts<span class="bi bi-chevron-down"></span></span>
+                <span>Docs<span class="bi bi-chevron-down"></span></span>
+            </nav>
+        </div>
+        <div>
+            <span class="btn-login">Login</span>
+            <span class="btn-create">Create account</span>
+        </div>
+    </div>
+        <img src="images/Amazon background.jpg" width="100%">
+        
+
+    </header>
+    <section>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Starting &#8377 149 Bestselling earbuds...</span>
+            </div>
+            <div class="card-body">
+                <div class="rows">
+                    <div>
+                        <img src="images/a1pix.jpg" class="card-img">
+                        <p>Starting &#8377 249 | boAt</p>
+                    </div>
+                    <div>
+                        <img src="images/a2pix.jpg" class="card-img">
+                        <p>Starting &#8377 349 | boult</p>
+                    </div>
+
+                </div>
+                <div class="rows">
+                    <div>
+                        <img src="images/a4pix.jpg" class="card-img">
+                        <p>Starting &#8377 649 | Noise</p>
+                    </div>
+                    <div>
+                        <img src="images/a17.jpg" class="card-img">
+                        <p>Starting 738377 149 | Zebronics</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span>See all offers</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Revamp your home in style</span>
+            </div>
+            <div class="card-body">
+                <div class="rows">
+                    <div>
+                        <img src="images/a10.jpg" class="card-img">
+                        <p>Cushion covers, bedsheets & more</p>
+                    </div>
+                    <div>
+                        <img src="images/a9.jpg" class="card-img">
+                        <p>Figurines, vases and more</p>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div>
+                        <img src="images/a8.jpg" class="card-img">
+                        <p>Home storage</p>
+                    </div>
+                    <div>
+                        <img src="images/a7.jpg" class="card-img">
+                        <p>Lighting solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span>Explore all</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Appliances for your home | Up to 55% off</span>
+            </div>
+            <div class="card-body">
+                <div class="rows">
+                    <div>
+                        <img src="images/a11.jpg" class="card-img">
+                        <p>Air conditioners</p>
+                    </div>
+                    <div>
+                        <img src="images/a16.jpg" class="card-img">
+                        <p>Refrigerators</p>
+                    </div>
+
+                </div>
+                <div class="rows">
+                    <div>
+                        <img src="images/a5.jpg" class="card-img">
+                        <p>Microwaves</p>
+                    </div>
+                    <div>
+                        <img src="images/a6.jpg" class="card-img">
+                        <p>Washing machines</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span>See more</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Starting &#8377 99 | Amazon Brands & more</span>
+            </div>
+            <div class="card-body">
+                <div class="rows">
+                    <div>
+                        <img src="images/a12.jpg" class="card-img">
+                        <p> 50% 0ff | Baby diapers & wipes</p>
+                    </div>
+                    <div>
+                        <img src="images/a13.jpg" class="card-img">
+                        <p>Starting &#8377 649| RC cars</p>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div>
+                        <img src="images/a14.jpg" class="card-img">
+                        <p>Up to 50% off | Baby safety essentials</p>
+                    </div>
+                    <div>
+                        <img src="images/a15.jpg" class="card-img">
+                        <p>Up to 50% off | Ride ons</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span>See all offers</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec2">
+            <div class="card">
+             <div class="card-header">
+                <span class="card-title">Starting &#8377 149 Bestselling earbuds...</span>
+             </div>
+             <div class="card-body">
+                <div class="rows">
+                    <div>
+                        <img src="images/b1.jpg" class="card-img">
+                        <p>Starting &#8377 249 | boAt</p>
+                    </div>
+                    <div>
+                        <img src="images/b2.jpg" class="card-img">
+                        <p>Starting &#8377 349 | boult</p>
+                    </div>
+
+                </div>
+                <div class="rows">
+                    <div>
+                        <img src="images/b3.jpg" class="card-img">
+                        <p>Starting &#8377 649 | Noise</p>
+                    </div>
+                    <div>
+                        <img src="images/b5.jpg" class="card-img">
+                        <p>Starting 738377 149 | Zebronics</p>
+                    </div>
+                </div>
+             </div>
+             <div class="card-footer">
+                <span>See all offers</span>
+             </div>
+           </div>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Revamp your home in style</span>
+            </div>
+            <div class="card-body">
+                <div class="rows">
+                    <div>
+                        <img src="images/b6.jpg" class="card-img">
+                        <p>Cushion covers, bedsheets & more</p>
+                    </div>
+                    <div>
+                        <img src="images/b7.jpg" class="card-img">
+                        <p>Figurines, vases and more</p>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div>
+                        <img src="images/b8.jpg" class="card-img">
+                        <p>Home storage</p>
+                    </div>
+                    <div>
+                        <img src="images/a7.jpg" class="card-img">
+                        <p>Lighting solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span>Explore all</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Appliances for your home | Up to 55% off</span>
+            </div>
+            <div class="card-body">
+                <div class="rows">
+                    <div>
+                        <img src="images/a1pix.jpg" class="card-img">
+                        <p>Air conditioners</p>
+                    </div>
+                    <div>
+                        <img src="images/a2pix.jpg" class="card-img">
+                        <p>Refrigerators</p>
+                    </div>
+
+                </div>
+                <div class="rows">
+                    <div>
+                        <img src="images/a4pix.jpg" class="card-img">
+                        <p>Microwaves</p>
+                    </div>
+                    <div>
+                        <img src="images/a17.jpg" class="card-img">
+                        <p>Washing machines</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span>See more</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Starting &#8377 99 | Amazon Brands & more</span>
+            </div>
+            <div class="card-body">
+                <div class="rows">
+                    <div>
+                        <img src="images/a12.jpg" class="card-img">
+                        <p> 50% 0ff | Baby diapers & wipes</p>
+                    </div>
+                    <div>
+                        <img src="images/a13.jpg" class="card-img">
+                        <p>Starting &#8377 649| RC cars</p>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div>
+                        <img src="images/a14.jpg" class="card-img">
+                        <p>Up to 50% off | Baby safety essentials</p>
+                    </div>
+                    <div>
+                        <img src="images/a15.jpg" class="card-img">
+                        <p>Up to 50% off | Ride ons</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span>See all offers</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="text">
+        <h1>Latest Buyers Reviews</h1>
+    </div>
+    <section class="sec3">
+        <div class="card-sec3">
+            <div class="header-sec3">
+                <div>
+                    <img src="images/sneakers.jpg" class="img-sec3">
+                </div>
+                <div>
+                    <div class="card-tit">Shoes</div>
+                    <div class="card-subtit">Low top Sneakers</div>
+                    <div>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star"></span>
+                        <span class="bi bi-star"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="body-sec3">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, sequi fugit. Ea porro quasi natus iste id aliquam magni, qui cupiditate doloremque laborum! Est earum placeat impedit eligendi expedita animi.</p>
+            </div>
+            <div class="footer-sec3">
+                Logan Edwards 10<sup>th</sup> july 2025.
+            </div>
+        </div>
+        <div class="card-sec3">
+            <div class="header-sec3">
+                <div>
+                    <img src="images/sneakers.jpg" class="img-sec3">
+                </div>
+                <div>
+                    <div class="card-tit">Blouse</div>
+                    <div class="card-subtit">Low top Blouse</div>
+                    <div>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="body-sec3">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente pariatur maxime enim non vel ea ex quis, distinctio laboriosam itaque doloremque incidunt ducimus eius alias. Dicta accusantium corporis deleniti provident.</p>
+            </div>
+            <div class="footer-sec3">
+                Logan Edwards 10<sup>th</sup> july 2025.
+            </div>    
+        </div>
+        <div class="card-sec3">
+             <div class="header-sec3">
+                <div>
+                    <img src="images/sneakers.jpg" class="img-sec3">
+                </div>
+                <div>
+                    <div class="card-tit">Shirt</div>
+                    <div class="card-subtit">Low top Shirt</div>
+                    <div>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="body-sec3">
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, sequi fugit. Ea porro quasi natus iste id aliquam magni, qui cupiditate doloremque laborum! Est earum placeat impedit eligendi expedita animi.</p>
+            </div>
+            <div class="footer-sec3">
+                Logan Edwards, 10<sup>th</sup> july 2025.
+            </div>    
+        </div>
+    </section>
+
+     <div class="back">Back to top </div>
+
+    <footer>
+        <div class="sev-cont">
+        <div>
+            <span class="sev-title">Get to Know<br>Us</span>
+            <span>About Amazon</span>
+            <span>Careers</span>
+            <span>Press Releases</span>
+            <span>Amazon Science</span>
+        </div>
+        <div>
+            <span class="sev-title">Connect with<br>Us</span>
+            <aside>
+                <span>Facebook</span>
+                <span>Twitter</span>
+                <span>Instagram</span>
+            </aside>
+        </div>
+        <div>
+            <span class="sev-title">Make Money with Us</span>
+            <span>Sell on Amazon</span>
+            <span>Sell under Amazon<br>Accelerator</span>
+            <span>Protect and Build Your Brand</span>
+            <span>Amazon Global Selling</span>
+            <span>Supply to Amazon</span>
+            <span>Become an Affiliate</span>
+            <span>Fulfilment by Amazon</span>
+            <span>Advertise Your Products</span>
+            <span>Amazon Pay on Merchants</span>
+        </div>
+        <div>
+            <span class="sev-title">Let Us Help You</span>
+            <span>Your Account</span>
+            <span>Returns Centre</span>
+            <span>Recalls and Product Safety<br>Alerts</span>
+            <span>100% Purchase Protection</span>
+            <span>Amazon App Download</span>
+            <span>Help</span>
+
+        </div>
+
+    </div>
+   
+    <div class="btn-cont">
+       
+         <span class="logo">Amazon</span>
+         <span class="bi bi-globe"><span>English</span></span> 
+         <span class="btn2">India</span>
+        
+
+       <div class="botom-footer">
+          <span class="all-spans">
+             <span>Conditions of Use</span>
+             <span>Privacy</span>
+             <span>Consumer Health Data Privacy Disclosure</span>
+             <span>Your Ads Privacy Choices</span>
+          </span>
+            <address>
+              <span class="bi bi-copy"> 1996-2025, Amazon.com, Inc. It's affiliates</span>
+            </address>
+       </div>
+    </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary | Details</title>
+    <style>
+        nav{
+            border: 1px solid grey;
+            width: 150px;
+            height: 450px;
+            padding: 10px;
+            
+        }
+        details{
+            margin-top: 10px;
+            font-family: Arial;
+        }
+        details div{
+            padding-left: 5px;
+            margin-left: 30px;
+            padding: 5px;
+            font-weight: lighter;
+            font-size: 12px;
+            color: white;
+            background-color: black;
+            margin-top: 5px;
+            border-radius: 2px;
+            width: 80px;
+            border: 1px solid black;
+        }
+        summary{
+            color: blue;
+        }
+        .sofa-lists div{
+            width: 70px;
+            margin-left: 0px;
+            background-color: darkgrey;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>Home</div>
+           <div>
+                <details>
+                    <summary>Kitchen</summary>
+                     <div>Pots</div>
+                     <div>Gas Cylinder</div>
+                     <div>Plates</div>
+                </details>
+            </div>
+            
+            <div>
+                <details>
+                    <summary>Furniture</summary>
+                    <div>Bed-frame</div>
+                    <div>Cabinets</div>
+
+                    <div>
+                         <details class="sofa-lists">
+                            <summary>Sofas</summary>
+                            <div>Dinning-sofa</div>
+                            <div>Kitchen-sofa</div>
+                            <div>Room-sofa</div>
+
+                        </details>
+                    </div>
+                </details>
+            </div>
+        </nav>
+    </header>
+ <!-- You can also style differently by giving each details different classs name  -->
+</body>
+</html>
