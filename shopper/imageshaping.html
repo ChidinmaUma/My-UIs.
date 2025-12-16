@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-shaping</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .img1{
+            border-top-right-radius: 200px;
+            border-bottom-left-radius: 200px;
+        }
+        .img2{
+            border-top-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+        }
+        .img3{
+
+            border-bottom-right-radius: 200px;
+            border-top-left-radius: 200px;
+        }
+        .img4{
+            border-bottom-left-radius: 200px;
+            border-top-right-radius: 200px;
+        }
+        /* To keep the flower image in center screen ensure everything is inside one div then use the body as classname  to style */
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        main {
+            animation-name: rotate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .greet-text{
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+   <main>
+      <div>
+         <img src="images/girlpix.jpg" width="200px"height="200px"class="img1">
+         <img src="images/manpix.jpg"  width="200px"height="200px" class="img2">
+     </div>
+     <div>
+         <img src="images/kidpix.jpg"  width="200px"height="200px" class="img3">
+         <img src="images/girlpix.jpg"  width="200px"height="200px"class="img4">
+     </div>
+     <div class="greet-text">
+        Welcome!
+     </div>
+    </main>
+</body>
+</html>
